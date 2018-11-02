@@ -54,37 +54,132 @@ nav ul li a:hover
 main{
     padding: 0;
     border: 0;
-    display: flex;
+    display: block;
     width: 100%;
     background: #56c435;
-    justify-content: center;
-    align-items: center;
-    height: 200px;
+  
+}
+
+main .content-slider{
+
+    height: 650px;
+    width: 100%;
+    position: relative;
 
 }
-main .box{
-    width: 500px;
-}
-main p{
+.content-slider ul{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #ccc;
     margin: 0;
     padding: 0;
-    font-size: 24px;
+    display: flex;
+    box-sizing: border-box;
 }
-main .rating{
+.content-slider ul li{
+    list-style: none;
+    position: relative;
+    width: 20%;
+    height: 100%;
+    border-right: 1px solid #000;
+    padding: 0 10px;
+    transition: 0.5s;
+    text-align: center;
+    overflow: hidden;
+   
+}
+.content-slider ul li:nth-child(1)
+{
+    background: url('./img/pexels-1.jpeg');
+    background-size: cover;
+    background-position: left;
+}
+.content-slider ul li:nth-child(2)
+{
+    background: url('./img/pexels-2.jpeg');
+    background-size: cover;
+    background-position: left;
+}
+.content-slider ul li:nth-child(3)
+{
+    background: url('./img/pexels-3.jpeg');
+    background-size: cover;
+    background-position: left;
+}
+.content-slider ul li:nth-child(4)
+{
+    background: url('./img/pexels-4.jpeg');
+    background-size: cover;
+    background-position: left;
+}
+.content-slider ul li:nth-child(5)
+{
+    background: url('./img/pexels-5.jpeg');
+    background-size: cover;
+    background-position: left;
+}
+
+.content-slider ul li:hover
+{
+    width: 160%;
+
+}
+.content-slider ul li .content
+{
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    background: rgba(0,0,0,0.8);
+    box-sizing: border-box;
+    transition: 1s;
+    color: #ccc;
+}
+
+
+.content-slider ul li:hover .content
+{
+    bottom: 0;
+    opacity: 1;
+
+}
+
+
+
+
+main .rating-boxes{
+    display: flex;
+    flex-wrap: wrap;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+}
+.rating-boxes p{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-size: 24px;
+    justify-content: center;
+    display: flex;
+}
+.rating-boxes .rating{
     position: relative;
     display: flex;
     flex-direction: row-reverse;
-    margin-top: 10px;
+    margin: 10px 0;
 
     border: 1px solid #000;
     box-sizing: border-box;
     background: linear-gradient(to right, #f00, #ff0, #0f0);
 }
-main .rating input
+.rating-boxes .rating input
 {
     display: none;
 }
-main .rating label
+.rating-boxes .rating label
 {
     display: block;
     cursor: pointer;
@@ -101,8 +196,8 @@ main .rating label
     background: #fff;
     border-left: 1px solid #000;
 }
-main .rating input[type="radio"]:hover ~ label,
-main .rating input[type="radio"]:checked ~ label
+.rating-boxes .rating input[type="radio"]:hover ~ label,
+.rating-boxes .rating input[type="radio"]:checked ~ label
 {
     background: transparent;
 
@@ -114,7 +209,7 @@ footer{
     background: #fffc93;
     justify-content: center;
     align-items: center;
-    height: 200px;
+    height: 100px;
 }
 footer .box{
     position: relative;
