@@ -262,3 +262,88 @@ footer .box:hover .details
     font-size: 28px;
     transition-delay: 0.7s;
 }
+
+.contact-form
+{
+    margin: 0;
+    padding: 0;
+    background: url("./img/pexels-3.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: calc(100vh - 82px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ 
+    
+}
+.contact-box
+{ 
+   border: 1p solid rgba(255,255,255,0.3);
+   padding: 40px;
+   background:rgba(255,255,255);
+   opacity: 0.9;
+   border-radius: 10px;
+   box-sizing: border-box;
+   width: 40%;
+}
+.contact-box input,
+.contact-box textarea
+{
+    padding: 10px 0;
+    margin-bottom: 20px;
+    border: none;
+    outline: none;
+    width: 100%;
+    border-bottom: 2px solid #000;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+.contact-box textarea
+{
+    height: 70px;
+}
+.contact-box h2
+{
+    margin: 0 0 30px;
+    padding: 0;
+    color: #f7497d;
+}
+.contact-box div
+{
+    position: relative;
+}
+.contact-box div label{
+    position: absolute;
+    top:10px;
+    left: 0;
+    color: #999;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.contact-box input:focus ~ label,
+.contact-box textarea:focus ~ label,
+.contact-box input:valid ~ label,
+.contact-box textarea:valid ~ label,
+.contact-box input[type="email"]:not([value=""]) ~ label
+{
+    top:-12px;
+    left: 0;
+    font-size: 12px;
+    color: #f7497d;
+}
+.contact-box input:focus ,
+.contact-box textarea:focus
+{
+    border-bottom-color: #f7497d;
+}
+
+.contact-box input[type="submit"]
+{
+    border-bottom: none;
+    cursor: pointer;
+    color: #fff;
+    background-color: #f7497d;
+    margin-bottom: 0;
+}
