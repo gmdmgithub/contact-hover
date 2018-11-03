@@ -9,9 +9,51 @@ body{
     background: #e91e63;
     box-sizing: border-box;
 }
+/* logo to be */
 header{
+    position: relative;
     height: 30px;
+    margin: 0;
+    padding: 0;
+    padding-top: 10px;
+    margin-left: 60px;
 }
+header::before
+{
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: -40px;
+    width: 20px;
+    height: 20px;
+    border: 3px solid gray;
+    border-radius: 50%;
+    border-top-color: #f7497d;
+    animation: spinner 1s linear infinite; 
+}
+header::after
+{
+    content: '';
+    position: absolute;
+    top: 5px;
+    right: 40px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border-top: 3px solid #795548;
+    border-right: 3px solid transparent;
+    animation: spinner 1s linear infinite; 
+}
+
+@keyframes spinner
+{
+    to 
+    {
+        transform: rotate(360deg);
+    }
+}
+
+/* navigation - start */
 nav{
     background: #795548;
     height: 50px;
@@ -51,6 +93,10 @@ nav ul li a:hover
 {
     background-color: #f00;
 }
+
+/* navigation - end */
+
+/* main block - start */
 main{
     padding: 0;
     border: 0;
@@ -60,6 +106,7 @@ main{
   
 }
 
+/* main block - slaider - start */
 main .content-slider{
 
     height: 650px;
@@ -145,10 +192,9 @@ main .content-slider{
     opacity: 1;
 
 }
+/* main block - slaider - end */
 
-
-
-
+/* main block - raiting - start */
 main .rating-boxes{
     display: flex;
     flex-wrap: wrap;
@@ -202,7 +248,9 @@ main .rating-boxes{
     background: transparent;
 
 }
+/* main block - raiting - end */
 
+/* footer start */
 footer{
     display: flex;
     width: 100%;
@@ -262,7 +310,9 @@ footer .box:hover .details
     font-size: 28px;
     transition-delay: 0.7s;
 }
+/* footer - end */
 
+/* contact form start */
 .contact-form
 {
     margin: 0;
@@ -321,7 +371,7 @@ footer .box:hover .details
     pointer-events: none;
     transition: 0.5s;
 }
-
+/* titlda means that effects direcly after element */
 .contact-box input:focus ~ label,
 .contact-box textarea:focus ~ label,
 .contact-box input:valid ~ label,
@@ -347,3 +397,4 @@ footer .box:hover .details
     background-color: #f7497d;
     margin-bottom: 0;
 }
+/* contact form - end */
