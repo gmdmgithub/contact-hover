@@ -1,3 +1,11 @@
+
+/* variables */
+:root {
+    --main-bg-color: #e91e63;
+    --main-second-color: #f7497d;
+}
+
+
 body{
     margin: 0;
     padding: 0;
@@ -6,7 +14,7 @@ body{
     align-items: center; */
     height: 100vh;
     font-family: sans-serif;
-    background: #e91e63;
+    background: var(--main-bg-color);
     box-sizing: border-box;
 }
 /* logo to be */
@@ -28,7 +36,7 @@ header::before
     height: 20px;
     border: 3px solid gray;
     border-radius: 50%;
-    border-top-color: #f7497d;
+    border-top-color: var(--main-bg-color);
     animation: spinner 1s linear infinite; 
 }
 header::after
@@ -356,7 +364,7 @@ footer .box:hover .details
 {
     margin: 0 0 30px;
     padding: 0;
-    color: #f7497d;
+    color: var(--main-second-color);
 }
 .contact-box div
 {
@@ -380,12 +388,12 @@ footer .box:hover .details
     top:-12px;
     left: 0;
     font-size: 12px;
-    color: #f7497d;
+    color: var(--main-second-color);
 }
 .contact-box input:focus ,
 .contact-box textarea:focus
 {
-    border-bottom-color: #f7497d;
+    border-bottom-color: var(--main-second-color);
 }
 
 .contact-box input[type="submit"]
@@ -393,7 +401,7 @@ footer .box:hover .details
     border-bottom: none;
     cursor: pointer;
     color: #fff;
-    background-color: #f7497d;
+    background-color: var(--main-second-color);
     margin-bottom: 0;
 }
 /* contact form - end */
