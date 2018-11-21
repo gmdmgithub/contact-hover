@@ -1,0 +1,42 @@
+/* navigation - start */
+nav {
+    background: #795548;
+    height: var(--nav-h);
+    width: 100%;
+    border-top: 1px solid #000;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+nav ul {
+    display: flex;
+    margin: 0;
+    padding: 0 20px;
+
+    float: right;
+
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    width: 100px;
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 0 20px;
+    font-weight: bold;
+    line-height: 50px;
+    text-align: center;
+    transition: 0.5s;
+}
+
+nav ul li a.active,
+nav ul li a:hover {
+    background-color: #f00;
+}
+/* navigation - end */

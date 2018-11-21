@@ -1,0 +1,42 @@
+/* logo to be */
+header {
+    position: relative;
+    height: var(--head-h);
+    margin: 0;
+    padding: 0;
+    padding-top: 10px;
+    margin-left: 60px;
+}
+
+/* spinners */
+header::before {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: -40px;
+    width: 20px;
+    height: 20px;
+    border: 3px solid gray;
+    border-radius: 50%;
+    border-top-color: var(--main-bg-color);
+    animation: spinner 1s linear infinite;
+}
+
+header::after {
+    content: '';
+    position: absolute;
+    top: 5px;
+    right: 40px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border-top: 3px solid #795548;
+    border-right: 3px solid transparent;
+    animation: spinner 1s linear infinite;
+}
+
+@keyframes spinner {
+    to {
+        transform: rotate(360deg);
+    }
+}

@@ -1,0 +1,81 @@
+@import url("./body.css");
+@import url("./header.css");
+@import url("./navigation.css");
+@import url("./footer.css");
+
+.service-container
+{
+    margin: 0;
+    padding: 0;
+    min-height: calc(100% - var(--head-h) - var(--nav-h) - 12px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+.service-main
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
+    grid-auto-rows: auto;
+    grid-gap: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+
+}
+.service-main .box 
+{
+    position: relative;
+    padding: 10px;
+    background: #fff;
+    padding: 20px 40px 40px;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 10px;
+    height: 300px;
+
+}
+
+.service-main .box h2
+{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    font-size: 3rem;
+    color: #fff;
+    z-index: 1;
+    opacity: 0.5;
+}
+.service-main .box h3 {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: #fff;
+    z-index: 1;
+    opacity: 0.8;
+}
+.service-main .box p {
+    position: relative;
+    font-size: 1rem;
+   color: #fff;
+}
+
+
+.service-main .box:nth-child(1)
+{
+    background: linear-gradient(45deg, #036eb7,#64eaff);
+}
+.service-main .box:nth-child(2) {
+    background: linear-gradient(45deg, #E91E63, #ed55ff);
+}
+.service-main .box:nth-child(3) {
+    background: linear-gradient(45deg, #086d35, #00ff72);
+}
+.service-main .box:nth-child(4) {
+    background: linear-gradient(45deg, #f05a4f, #f4c030);
+}

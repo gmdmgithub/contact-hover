@@ -1,0 +1,20 @@
+/* variables */
+:root {
+    --main-bg-color: #e91e63;
+    --main-second-color: #f7497d;
+    --head-h: 30px;
+    --nav-h: 50px;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    height: 100vh;
+    font-family: sans-serif;
+    background: var(--main-bg-color);
+    box-sizing: border-box;
+}
