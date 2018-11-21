@@ -1,0 +1,57 @@
+@import url("./body.css");
+@import url("./header.css");
+@import url("./navigation.css");
+@import url("./footer.css");
+
+/* about start */
+
+section {
+    position: relative;
+    margin: 0;
+    padding: 0 40px;
+    background: url('./img/bg-1.jpeg');
+    background-attachment: fixed;
+    height: calc(100% - var(--head-h) - var(--nav-h) - 12px);
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+section .about {
+
+    position: relative;
+    max-width: 600px;
+    padding: 50px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+    color: #000;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+
+}
+
+section .about:before {
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    right: -20px;
+    bottom: -20px;
+    opacity: 0.2;
+    background: url('./img/bg-1.jpeg');
+    background-attachment: fixed;
+    filter: blur(4px);
+
+}
+
+.about h2 {
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 2rem;
+    z-index: 2;
+}
+
+.about p {
+    z-index: 2;
+    font-size: 1.2rem;
+}
